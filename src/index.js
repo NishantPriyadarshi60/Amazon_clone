@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reducer, { initialState } from "./reducer";
@@ -7,13 +7,23 @@ import reportWebVitals from './reportWebVitals';
 import { StateProvider } from "./StateProvider";
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//     <StateProvider initialState={initialState} reducer={reducer}></StateProvider>
+//     <App />
+//   </React.StrictMode>
+// );
+
+ReactDOM.render(
   <React.StrictMode>
-    <StateProvider initialState={initialState} reducer={reducer}></StateProvider>
-    <App />
-  </React.StrictMode>
+    <StateProvider initialState={initialState} reducer={reducer}>
+      <App />
+    </StateProvider>
+  </React.StrictMode>,
+  document.getElementById('root')
 );
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
