@@ -6,7 +6,7 @@ import { getBasketTotal } from "./reducer";
 import { useNavigate } from "react-router-dom";
 
 function Subtotal() {
-    const navigate = useNavigate(); // Replace useHistory with useNavigate
+    const navigate = useNavigate();
     const [{ basket }, dispatch] = useStateValue();
 
     return (
@@ -26,9 +26,10 @@ function Subtotal() {
                 value={getBasketTotal(basket)}
                 displayType="text"
                 thousandSeparator={true}
-                prefix={"$"}
+                prefix={"₹"}
             />
-            <button onClick={() => navigate('/checkout')}>Proceed to Checkout</button>
+            <button onClick={() => { navigate('/payment')
+            }}>Proceed to Checkout</button>
         </div>
     );
 }

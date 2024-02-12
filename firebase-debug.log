@@ -1,0 +1,64 @@
+[debug] [2024-02-12T07:11:36.278Z] ----------------------------------------------------------------------
+[debug] [2024-02-12T07:11:36.279Z] Command:       /home/nishant/.nvm/versions/node/v18.19.0/bin/node /usr/bin/firebase init
+[debug] [2024-02-12T07:11:36.279Z] CLI Version:   13.2.1
+[debug] [2024-02-12T07:11:36.279Z] Platform:      linux
+[debug] [2024-02-12T07:11:36.279Z] Node Version:  v18.19.0
+[debug] [2024-02-12T07:11:36.279Z] Time:          Mon Feb 12 2024 12:41:36 GMT+0530 (India Standard Time)
+[debug] [2024-02-12T07:11:36.279Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-12T07:11:36.315Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-12T07:11:36.316Z] > authorizing via signed-in user (priyadarshinishant063@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/nishant/Amazon-Clone_2.0/amazon_clone
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-02-12T07:11:47.315Z] Using project from CLI flag: clone-45b3d
+[debug] [2024-02-12T07:11:47.316Z] > refreshing access token with scopes: []
+[debug] [2024-02-12T07:11:47.317Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-02-12T07:11:47.317Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-12T07:11:47.594Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-02-12T07:11:47.594Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-12T07:11:47.603Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-45b3d [none]
+[debug] [2024-02-12T07:11:48.119Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-45b3d 200
+[debug] [2024-02-12T07:11:48.119Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-45b3d {"projectId":"clone-45b3d","projectNumber":"650914458638","displayName":"AmazonClone","name":"projects/clone-45b3d","resources":{"hostingSite":"clone-45b3d"},"state":"ACTIVE","etag":"1_545e9482-cd62-4c4e-b018-c9a4752c28ce"}
+[info] i  Using project clone-45b3d (AmazonClone) 
+[info] 
+=== Hosting Setup
+[debug] [2024-02-12T07:11:48.128Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-45b3d [none]
+[debug] [2024-02-12T07:11:48.773Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-45b3d 200
+[debug] [2024-02-12T07:11:48.773Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-45b3d {"projectId":"clone-45b3d","projectNumber":"650914458638","displayName":"AmazonClone","name":"projects/clone-45b3d","resources":{"hostingSite":"clone-45b3d"},"state":"ACTIVE","etag":"1_545e9482-cd62-4c4e-b018-c9a4752c28ce"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-02-12T07:12:51.792Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-02-12T07:12:51.941Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-02-12T07:12:51.942Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.8.0","browserURL":"https://www.gstatic.com/firebasejs/10.8.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.8.0/firebase.tgz"},"live":{"version":"10.8","browserURL":"https://www.gstatic.com/firebasejs/live/10.8/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.8/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.8.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.8.0/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/10.8.0/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/10.8.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.8.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.8.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.8.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.8.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.8.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.8.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.memory.js"}}
+[info] ✔  Wrote build/index.html 
+[info] 
+[info] i  Detected a .git folder at /home/nishant/Amazon-Clone_2.0/amazon_clone 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=749447966&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
